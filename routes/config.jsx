@@ -31,7 +31,7 @@ export const config = [
       },
       {
         path: "profile",
-        element: <h1>profile</h1>,
+        element: <h1>Profile</h1>,
         // loader: ,
         // action: ,
         errorElement: <Error />,

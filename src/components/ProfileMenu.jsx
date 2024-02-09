@@ -5,6 +5,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Link } from "react-router-dom";
 
 function ProfileMenu() {
   return (
@@ -18,8 +19,14 @@ function ProfileMenu() {
         </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem>Dashboard</DropdownMenuItem>
-        <DropdownMenuItem>Profile</DropdownMenuItem>
+        <Link to="/dashboard">
+          <DropdownMenuItem>Dashboard</DropdownMenuItem>
+        </Link>
+
+        <Link to="/profile">
+          <DropdownMenuItem>Profile</DropdownMenuItem>
+        </Link>
+
         <DropdownMenuItem>Logout</DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
