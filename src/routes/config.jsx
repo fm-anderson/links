@@ -1,6 +1,7 @@
 import Home from "./Home";
 import Error from "./Error";
-import Layout from "../src/layout/Layout";
+import Layout from "../layout/Layout";
+import Authentication from "./Authentication";
 
 export const config = [
   {
@@ -16,8 +17,8 @@ export const config = [
         errorElement: <Error />,
       },
       {
-        path: "login",
-        element: <h1>Login</h1>,
+        path: "authentication",
+        element: <Authentication />,
         // loader: ,
         // action: ,
         errorElement: <Error />,
