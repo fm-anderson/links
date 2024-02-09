@@ -1,12 +1,13 @@
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "@/components/theme-provider";
-import Navbar from "./components/Navbar";
+import { config } from "../routes/config";
+
+const router = createBrowserRouter(config);
 
 function App() {
   return (
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-      <div>
-        <Navbar />
-      </div>
+      <RouterProvider router={router} />
     </ThemeProvider>
   );
 }

@@ -10,10 +10,12 @@ function ProfileMenu() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Avatar>
-          <AvatarImage src="https://avatars.githubusercontent.com/u/78233612?v=4" />
-          <AvatarFallback>AM</AvatarFallback>
-        </Avatar>
+        <div className="cursor-pointer">
+          <Avatar>
+            <AvatarImage src="https://avatars.githubusercontent.com/u/78233612?v=4" />
+            <AvatarFallback>AM</AvatarFallback>
+          </Avatar>
+        </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem>Dashboard</DropdownMenuItem>
