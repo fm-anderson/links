@@ -14,7 +14,7 @@ export function SignupForm({ setIsLogin }) {
   return (
     <Card className="md:w-2/3">
       <CardHeader className={"text-center"}>
-        <CardTitle>Sign</CardTitle>
+        <CardTitle>Sign Up</CardTitle>
         <CardDescription>
           Enter your information below to create your account
         </CardDescription>
