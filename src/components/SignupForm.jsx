@@ -14,7 +14,7 @@ export function SignupForm({ setIsLogin }) {
   return (
     <Card className="md:w-2/3">
       <CardHeader className={"text-center"}>
-        <CardTitle>Create an account</CardTitle>
+        <CardTitle>Sign</CardTitle>
         <CardDescription>
           Enter your information below to create your account
         </CardDescription>
@@ -26,7 +26,7 @@ export function SignupForm({ setIsLogin }) {
               <Input id="email" placeholder="name@example.com" />
               <Input id="username" placeholder="username" />
               <Input id="password" placeholder="*********" />
-              <Button className="w-full">Sign In With Email</Button>
+              <Button className="w-full">Sign Up With Email</Button>
             </div>
           </div>
         </form>

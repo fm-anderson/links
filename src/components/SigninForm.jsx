@@ -10,11 +10,11 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 
-export function LoginForm({ setIsLogin }) {
+export function SigninForm({ setIsLogin }) {
   return (
     <Card className="md:w-2/3">
       <CardHeader className={"text-center"}>
-        <CardTitle>Login with your account</CardTitle>
+        <CardTitle>Sign In</CardTitle>
         <CardDescription>Enter your information below to login</CardDescription>
       </CardHeader>
       <CardContent>
