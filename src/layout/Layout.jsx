@@ -1,6 +1,8 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Toaster } from "@/components/ui/sonner";
+import { getCurrentMoment } from "@/lib/helper";
 
 function Layout() {
   return (
@@ -10,6 +12,7 @@ function Layout() {
       <Outlet />
 
       <Footer />
+      <Toaster />
     </div>
   );
 }

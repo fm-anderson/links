@@ -26,6 +26,9 @@ export function SignupForm({ setIsLogin }) {
               <Input id="email" placeholder="name@example.com" />
               <Input id="username" placeholder="username" />
               <Input id="password" placeholder="*********" />
+              <p className="text-center font-light text-destructive">
+                Username not available
+              </p>
               <Button className="w-full">Sign Up With Email</Button>
             </div>
           </div>

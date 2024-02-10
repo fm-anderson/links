@@ -9,8 +9,21 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import { toast } from "sonner";
+import { getCurrentMoment } from "@/lib/helper";
 
 export function SigninForm({ setIsLogin }) {
+  const handleSignin = (e) => {
+    e.preventDefault();
+
+    toast(e.target.innerText, {
+      description: getCurrentMoment(),
+      action: {
+        label: "Undo",
+        onClick: () => console.log("Undo"),
+      },
+    });
+  };
   return (
     <Card className="md:w-2/3">
       <CardHeader className={"text-center"}>
@@ -23,7 +36,12 @@ export function SigninForm({ setIsLogin }) {
             <div className="flex flex-col space-y-1.5">
               <Input id="email" placeholder="name@example.com" />
               <Input id="password" placeholder="*********" />
-              <Button className="w-full">Sign In With Email</Button>
+              <p className="text-center font-light text-destructive">
+                No account found. Please, try again.
+              </p>
+              <Button className="w-full" onClick={handleSignin}>
+                Sign In With Email
+              </Button>
             </div>
           </div>
         </form>
