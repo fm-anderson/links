@@ -15,9 +15,7 @@ export function SignupForm({ setIsLogin }) {
     <Card className="md:w-2/3">
       <CardHeader className={"text-center"}>
         <CardTitle>Sign Up</CardTitle>
-        <CardDescription>
-          Enter your information below to create your account
-        </CardDescription>
+        <CardDescription>Create a new account below</CardDescription>
       </CardHeader>
       <CardContent>
         <form>
@@ -27,7 +25,7 @@ export function SignupForm({ setIsLogin }) {
               <Input id="username" placeholder="username" />
               <Input id="password" placeholder="*********" />
               <p className="text-center font-light text-destructive">
-                Username not available
+                Username not available, try again.
               </p>
               <Button className="w-full">Sign Up With Email</Button>
             </div>
@@ -75,7 +73,7 @@ export function SignupForm({ setIsLogin }) {
             onClick={() => setIsLogin(true)}
             className="cursor-pointer underline"
           >
-            Login Here
+            Sign In Here
           </span>
         </p>
       </CardFooter>

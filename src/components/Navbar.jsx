@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ProfileMenu from "./ProfileMenu";
+import { Button } from "./ui/button";
 
 function Navbar() {
   return (
@@ -16,6 +17,9 @@ function Navbar() {
           </div>
           <div className="flex gap-2">
             <ProfileMenu />
+            <Link to="/authentication">
+              <Button>Sign In</Button>
+            </Link>
           </div>
         </div>
       </div>
